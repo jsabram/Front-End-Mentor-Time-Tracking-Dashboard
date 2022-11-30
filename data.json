@@ -20,7 +20,7 @@
     "title": "Play",
     "timeframes": {
       "daily": {
-        "current": 1,
+        "current": 3,
         "previous": 2
       },
       "weekly": {
@@ -38,7 +38,7 @@
     "timeframes": {
       "daily": {
         "current": 0,
-        "previous": 1
+        "previous": 2
       },
       "weekly": {
         "current": 4,
@@ -54,8 +54,8 @@
     "title": "Exercise",
     "timeframes": {
       "daily": {
-        "current": 1,
-        "previous": 1
+        "current": 2,
+        "previous": 4
       },
       "weekly": {
         "current": 4,
@@ -71,7 +71,7 @@
     "title": "Social",
     "timeframes": {
       "daily": {
-        "current": 1,
+        "current": 2,
         "previous": 3
       },
       "weekly": {
@@ -89,7 +89,7 @@
     "timeframes": {
       "daily": {
         "current": 0,
-        "previous": 1
+        "previous": 3
       },
       "weekly": {
         "current": 2,

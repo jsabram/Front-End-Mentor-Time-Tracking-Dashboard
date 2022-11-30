@@ -110,6 +110,8 @@ body {
 	text-align: center;
 
 	a {
+		left: 50%;
+		transform: translateX(-50%);
 		color: hsl(228, 45%, 44%);
 		transition: color 0.3s;
 
