@@ -1,0 +1,135 @@
+@use '_colors' as colors;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	background-color: colors.$very-dark-blue;
+	color: colors.$pale-blue;
+	font-family: 'Rubik', sans-serif;
+}
+
+.dashboard {
+	max-width: 1400px;
+
+	&-left {
+		&__panel {
+			background-color: colors.$dark-blue;
+			border-radius: 10px;
+
+			&-top {
+				background-color: colors.$blue;
+				border-radius: 10px;
+
+				.user-photo {
+					height: 60px;
+					width: 60px;
+				}
+			}
+
+			&-bottom {
+				.link {
+					cursor: pointer;
+					transition: color 0.3s;
+
+					&:hover,
+					&:focus {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	&-right {
+		&__card {
+			background-color: colors.$work-color;
+			border-radius: 10px;
+			cursor: pointer;
+
+			&--play {
+				background-color: colors.$play-color;
+			}
+
+			&--study {
+				background-color: colors.$study-color;
+			}
+
+			&--exercise {
+				background-color: colors.$exercise-color;
+			}
+
+			&--social {
+				background-color: colors.$social-color;
+			}
+
+			&--self-care {
+				background-color: colors.$self-care-color;
+			}
+
+			.card-decor {
+				height: 40px;
+				overflow: hidden;
+
+				svg {
+					top: -10px;
+					right: 10px;
+				}
+			}
+
+			.card-info {
+				background-color: colors.$dark-blue;
+				border-radius: 10px;
+				transition: background-color 0.3s;
+
+				.card-btn {
+					border: none;
+					outline: none;
+					background: none;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.dashboard-right__card:hover {
+	.card-info {
+		background-color: colors.$desaturated-blue;
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+
+	a {
+		color: hsl(228, 45%, 44%);
+		transition: color 0.3s;
+
+		&:hover {
+			color: colors.$desaturated-blue;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.dashboard {
+		&-left {
+			&__panel {
+				&-top {
+					.user-photo {
+						height: 70px;
+						width: 70px;
+					}
+				}
+			}
+		}
+	}
+}

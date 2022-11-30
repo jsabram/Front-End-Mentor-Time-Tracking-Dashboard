@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(226deg, 43%, 10%);
+  color: hsl(236deg, 100%, 87%);
+  font-family: "Rubik", sans-serif;
+}
+
+.dashboard {
+  max-width: 1400px;
+}
+.dashboard-left__panel {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 10px;
+}
+.dashboard-left__panel-top {
+  background-color: hsl(246deg, 80%, 60%);
+  border-radius: 10px;
+}
+.dashboard-left__panel-top .user-photo {
+  height: 60px;
+  width: 60px;
+}
+.dashboard-left__panel-bottom .link {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.dashboard-left__panel-bottom .link:hover, .dashboard-left__panel-bottom .link:focus {
+  color: #fff;
+}
+.dashboard-right__card {
+  background-color: hsl(15deg, 100%, 70%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dashboard-right__card--play {
+  background-color: hsl(195deg, 74%, 62%);
+}
+.dashboard-right__card--study {
+  background-color: hsl(348deg, 100%, 68%);
+}
+.dashboard-right__card--exercise {
+  background-color: hsl(145deg, 58%, 55%);
+}
+.dashboard-right__card--social {
+  background-color: hsl(264deg, 64%, 52%);
+}
+.dashboard-right__card--self-care {
+  background-color: hsl(43deg, 84%, 65%);
+}
+.dashboard-right__card .card-decor {
+  height: 40px;
+  overflow: hidden;
+}
+.dashboard-right__card .card-decor svg {
+  top: -10px;
+  right: 10px;
+}
+.dashboard-right__card .card-info {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.dashboard-right__card .card-info .card-btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dashboard-right__card:hover .card-info {
+  background-color: hsl(235deg, 45%, 61%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+  transition: color 0.3s;
+}
+.attribution a:hover {
+  color: hsl(235deg, 45%, 61%);
+}
+
+@media (min-width: 992px) {
+  .dashboard-left__panel-top .user-photo {
+    height: 70px;
+    width: 70px;
+  }
+}/*# sourceMappingURL=style.css.map */
