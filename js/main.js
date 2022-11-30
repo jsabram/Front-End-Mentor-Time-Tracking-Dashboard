@@ -11,7 +11,7 @@ let weeklyPreviousTimes;
 let monthlyCurrentTimes;
 let monthlyPreviousTimes;
 
-fetch('../data.json')
+fetch('./data.json')
 	.then(function (response) {
 		return response.json();
 	})
